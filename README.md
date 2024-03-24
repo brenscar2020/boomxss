@@ -7,4 +7,4 @@ $ sh ./boomXSS.sh -payload "<script>alert\`1\`</script>"
 
 You may need to backslash encode some special characters, to avoid your string being terminated unenxpectedly, e.g:
 
-$ sh ./boomXSS.sh --payload "\"<script>alert\`1\`</script>"
+$ sh ./boomXSS.sh --payload "\\"<script>alert\`1\`</script>"
